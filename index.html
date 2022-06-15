@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="./slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">  
     <title>Task</title>
   </head>
 
@@ -12,7 +17,7 @@
     <header>
       <nav id="navbar">
         <img src="./companyName.png" id="company" title="Website Success" alt="Company Name"/>
-        <div>
+        <div id="contact">
           <div id="icon-number">
             <img src="./phone.png" id="phone" title="Phone Icon" alt="Phone Icon"/>
             <a id="number" href="tel:01243888555">01243888555</a>
@@ -27,7 +32,7 @@
         <img src="./lake.webp" id="background-lake" title="Lake" alt="Lake"/>
         <img src="./background.webp" id="background-blue" title="Blue Background" alt="Blue Background"/>
         <div id="heading-form">
-            <h1>LOREM IPSUM DOLOR SITAMET?</h1>
+            <h1>LOREM IPSUM DOLOR <span>SITAMET?</span></h1>
             <h2>Consectetur adipiscing elit.</h2>
             <div id="form-h3">
               <h3>LOREM IPSUM DOLOR</h3>
@@ -47,10 +52,14 @@
           <img src="./lake.webp" title="Lake" alt="Lake"/>
           <div id="h2-ul">
             <h2>LOREM IPSUM DOLOR</h2>
+            <p id="dots">...................................</p>
             <ul>
-                <li>Lorem ipsum dolorsitamet,consectetur adipiscingelit,seddoeiusmod</li>
-                <li>Lorem ipsum dolorsitamet,consectetur adipiscingelit,seddoeiusmodtempor incididuntutlabore</li>
-                <li>Lorem ipsum dolorsitamet,consectetur adipiscingelit,seddoeiusmod</li>
+              <!-- <img src="./tick.png" class="tick" title="Tick" alt="Tick"/> -->
+              <li>Lorem ipsum dolorsitamet,consectetur adipiscingelit,seddoeiusmod</li>
+              <!-- <img src="./tick.png" class="tick" title="Tick" alt="Tick"/> -->
+              <li>Lorem ipsum dolorsitamet,consectetur adipiscingelit,seddoeiusmodtempor incididuntutlabore</li>
+              <!-- <img src="./tick.png" class="tick" title="Tick" alt="Tick"/> -->
+              <li>Lorem ipsum dolorsitamet,consectetur adipiscingelit,seddoeiusmod</li>
             </ul>
           </div>  
         </div>
@@ -58,13 +67,17 @@
         
       <div id="information">
         <div>
-            <h2>LOREMIPSUM DELOR</h2>
+          <img src="./question.png" id="question" title="Question Icon" alt="Question Icon"/>
+          <p id="info-title"><span class="bold">LOREM</span>IPSUM <span class="bold">DELOR</span></p>
+          <h2 id="underline">............................</h2>
+          <div id="info-p">
             <p>Lorem ipsum dolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntut laboreetdoloremagnaaliqua.Egetgravidacum soci isnatoquepenatibusetmagnis.Dignis sim
-                diam quisenim lobortisscelerisquefermentum dui.</p>
+            diam quisenim lobortisscelerisquefermentum dui.</p>
             <p>Quam adipiscingvitaeproinsagit tisnislrhoncusmat tisrhoncusurna.Indictum nonconsectetura erat.Justonecultricesduisapienegetmiproinsed.</p>
+          </div>
         </div>
 
-        <div>
+        <div id="info-img">
             <img src="./info1.png" class="info" title="1" alt="1"/>
             <img src="./info2.png" class="info" title="2" alt="2"/>
             <img src="./info3.png" class="info" title="3" alt="3"/>
@@ -72,21 +85,88 @@
       </div>
         
       <div id="carousel">
-        <div>
-            <div>
-                <img src="./quotation-mark.png" id="quotation-mark" title="Quotation" alt="Quotation"/>
-                <h2>LOREM IPSUM DOLORSIT AMET,CONSECTETUR</h2>
-                <p>Egetgravidacum soci isnatoque penatibusetmagnis.Dignisim diam quis enim lobortisscelerisquefermentum dui. Quam adipiscingvitaeproinsagit tisnisl rhoncusmatisrhoncusurna.</p>
-                <p>Ultricesdui</p>
+        <div class="carousel-center">
+          <div class="flex-rating">
+            <div class="quotation-left">
+              <img src="./quotation-mark.png" class="quotation-mark" title="Quotation" alt="Quotation"/>
+              <h2>LOREM IPSUM DOLORSIT AMET,CONSECTETUR</h2>
+            </div>
+            <p>Egetgravidacum soci isnatoque penatibusetmagnis.Dignisim diam quis enim lobortisscelerisquefermentum dui. Quam adipiscingvitaeproinsagit tisnisl rhoncusmatisrhoncusurna.</p>
+            <p>Ultricesdui</p>
+            <div class="star-rating">
+              <img src="./star.png" class="star" title="Star" alt="Star"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+            </div>
+          </div>
+          <div class="flex-img">
+            <img src="./lake.webp" class="quote-lake" title="Lake" alt="Lake"/>
+          </div>
+        </div>
+
+        <div class="carousel-center">
+          <div class="flex-rating">
+            <div class="quotation-left">
+              <img src="./quotation-mark.png" class="quotation-mark" title="Quotation" alt="Quotation"/>
+              <h2>LOREM IPSUM DOLORSIT AMET,CONSECTETUR</h2>
+            </div>
+            <p>Egetgravidacum soci isnatoque penatibusetmagnis.Dignisim diam quis enim lobortisscelerisquefermentum dui. Quam adipiscingvitaeproinsagit tisnisl rhoncusmatisrhoncusurna.</p>
+            <p>Ultricesdui</p>
+            <div class="star-rating">
+              <div class="star-rating">
                 <img src="./star.png" class="star" title="Star" alt="Star"/>
                 <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
                 <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
                 <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
                 <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              </div>
             </div>
-            <img src="./lake.webp" id="quote-lake" title="Lake" alt="Lake"/>
+          </div>
+          <div class="flex-img">
+            <img src="./lake.webp" class="quote-lake" title="Lake" alt="Lake"/>
+          </div>
+
+        </div><div class="carousel-center">
+          <div class="flex-rating">
+            <div class="quotation-left">
+              <img src="./quotation-mark.png" class="quotation-mark" title="Quotation" alt="Quotation"/>
+              <h2>LOREM IPSUM DOLORSIT AMET,CONSECTETUR</h2>
+            </div>
+            <p>Egetgravidacum soci isnatoque penatibusetmagnis.Dignisim diam quis enim lobortisscelerisquefermentum dui. Quam adipiscingvitaeproinsagit tisnisl rhoncusmatisrhoncusurna.</p>
+            <p>Ultricesdui</p>
+            <div class="star-rating">
+              <img src="./star.png" class="star" title="Star" alt="Star"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+              <img src="./star.png" class="star" title="Star 2" alt="Star 2"/>
+            </div>
+          </div>
+          <div class="flex-img">
+            <img src="./lake.webp" class="quote-lake" title="Lake" alt="Lake"/>
+          </div>
         </div>
       </div>
+
+      <!-- <div class="slider">
+        <div>
+            <img src="./info1.png" height="200px" width="200px" />
+        </div>
+        <div>
+            <img src="./info1.png" height="200px" width="200px" />
+        </div>
+        <div>
+            <img src="./info1.png" height="200px" width="200px" />
+        </div>
+        <div>
+            <img src="./info1.png" height="200px" width="200px" />
+        </div>
+        <div>
+            <img src="./info1.png" height="200px" width="200px" />
+        </div>
+      </div> -->
         
     </main>
 
@@ -101,5 +181,10 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>
