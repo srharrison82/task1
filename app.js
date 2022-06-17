@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    $('#carousel').slick({
+    $('#container').slick({
         arrows: true,
-        dots: true
     })
   });

@@ -9,9 +9,11 @@ body {
     float: none !important;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 15px; 
-    background-color: #cad5db;
+    background-color: rgb(239, 239, 239);
 }
 
+
+/* Nav */
 #navbar {
     display: flex;
     justify-content: space-around;
@@ -47,6 +49,8 @@ body {
     font-weight: 900;
 }
 
+
+/* Section 1 */
 #form-list {
     position: relative;
 }
@@ -62,21 +66,16 @@ body {
     height: 500px;
     filter: saturate(30%);
     object-fit: cover;
+    background-image: url("./background.webp");
+    position: absolute;
+
 }
 
 #heading-form {
-    width: 260;
+    width: 260px;
     position: absolute;
     top: 30px;
     right: 20%;
-}
-
-@media (max-width: 1000px) {
-    #heading-form {
-        /* left: 50%;
-        right: 50%;
-        transform: translate(-50%, 0); */
-    }
 }
 
 #heading-form h1 {
@@ -154,14 +153,18 @@ form input {
     color: white;
 }
 
+
+/* Section 2 */
 #list-lake {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     color: white;
-    position: absolute; 
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 60px;
+    padding: 10px;
 }
 
 #h2-ul {
@@ -186,13 +189,15 @@ form input {
 
 #list-lake img {
     height: 200px;
-    width: 400px;
-    margin-right: 20px;
+    width: 350px;
     box-shadow: 6px 8px 16px 6px rgba(0, 0, 0, 0.50), 6px 12px 40px 6px rgba(0, 0, 0, 0.25);
 }
 
 #list-lake ul {
     width: 300px;
+    margin-left: 20px;
+    list-style-image: url('./tick.png');
+    list-style-type: none;
 }
 
 #list-lake li {
@@ -200,10 +205,11 @@ form input {
 }
 
 #information {
-    margin: 50px 0;
+    padding: 50px 0;
     text-align: center;
     width: 100%;
     color: rgb(81, 127, 179);
+    background-color: #cad5db;
 }
 
 #info-title {
@@ -248,21 +254,23 @@ form input {
     margin: 0 10px;
 }
 
-#carousel {
-    display: block;
+
+/* Section 3 */
+#container {
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    align-items: center;
+    width: 700px;
+    padding: 30px 10% 60px;
+    box-sizing: content-box;
+    height: 350px;
+    margin: 0 auto;
 }
 
-.carousel-center {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 28%;
-    height: 400px;
-    padding-top: 120px;
-    box-sizing: content-box;
+.slider {
+    padding: 0 40px;
 }
+
 
 .flex-rating {
     width: 300px;
@@ -312,6 +320,8 @@ form input {
     padding-left: 28px;
 }
 
+
+/* Footer */
 footer {
     background-color: rgb(235, 129, 63);
     display: flex; 
@@ -336,3 +346,77 @@ footer {
     filter: contrast(60%);
     margin: 0 5px;
 }
+
+
+/* Media Queries */
+@media (max-width: 410px) {
+    #contact p {
+        font-size: 10px;
+    } 
+}
+
+@media (max-width: 724px) {
+    #background-blue {
+        height: 600px;
+    }
+    #heading-form {
+        top: 210px;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+    #list-lake {
+        margin-top: 130px;
+        margin-bottom: 20px;
+
+    }
+    #list-lake img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    #info-p p {
+      width: 300px;
+    }
+}
+
+@media (max-width: 880px) {
+    #container {
+        width: 380px;
+        height: 500px;
+    }
+    .quote-lake {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 490px) {
+    #container {
+        width: 77vw;
+        height: 110vw;
+    }
+    .slider {
+        padding: 20px 40px;
+    }
+    .quote-lake {
+        width: 60vw;
+        height: 50vw;
+    }
+    .flex-rating {
+        width: 60vw;
+    }
+    .flex-rating p {
+        padding-left: 0;
+        font-size: 10px;
+    }
+    .quotation-mark {
+        height: 22px;
+        width: 22px;
+    }
+    .star-rating {
+        padding-left: 0;
+    }
+}
+
+
